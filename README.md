@@ -63,22 +63,27 @@ Caused by: java.io.IOException: Attempted read from closed stream.
 ---
 
 - SDK version that you are using.
-> Android SDK: v 2.0.3 or Flutter SDK: v 0.1.3 
+> Android SDK: v2.0.3 or Flutter SDK: v0.1.3 
 ---
 
 - Configuration of your tools
-* IDE examples:
+
+IDE examples:
+
 > android studio 2021.1.2
 
 > XCode 13.1
 
 > ...
-* Mobile OS example:
+
+Mobile OS example:
+
 > Android API level 31
 
 > iOS 15.4
 
-* Device Model example:
+Device Model example:
+
 > Samsung Galaxy S9 (android 9) or (api level 28)
 
 > iPhone 13 mini (iOS 15.4)
