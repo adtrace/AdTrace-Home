@@ -11,7 +11,7 @@
 </a></p>  
 
 
-## Links
+## Links to Official Documentations
 
 - Native
      - [android SDK + Web bridge](https://github.com/adtrace/adtrace_sdk_android)
@@ -23,6 +23,14 @@
 
 ### **Technical support**
 if you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
+
+- Native
+     - [android issues](https://github.com/adtrace/adtrace_sdk_android/issues)
+     - [iOS issues](https://github.com/adtrace/adtrace_sdk_iOS/issues)
+- Frameworks
+     - [Flutter issues](https://github.com/adtrace/adtrace_sdk_flutter/issues)
+     - [React Native issues](https://github.com/adtrace/adtrace_sdk_react_native/issues)
+     - [Unity issues](https://github.com/adtrace/adtrace_sdk_unity/issues)
 
 ### ***Recommended issue template***
 ---
