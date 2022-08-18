@@ -44,6 +44,7 @@ if you have any technical question please review closed issues or submit a new *
 > I also tried this and that
 ---
 - error message you see (related to adtrace sdk)
+**Note**: set AdTrace log level to `verbose` and search for `AdTrace` tag in logs for sdk logs too.
 > this is the error i'm getting:
 ```java
 java.io.IOException: Attempted read from closed stream.
@@ -72,6 +73,7 @@ Caused by: java.io.IOException: Attempted read from closed stream.
 
 - SDK version that you are using.
 > Android SDK: v2.0.3 or Flutter SDK: v0.1.3 
+for Flutter run `flutter doctor` and mention `environment: sdk` too
 ---
 
 - Configuration of your tools
