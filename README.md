@@ -88,7 +88,7 @@ IDE examples:
 
 Mobile OS example:
 
-> Android API level 31
+> Android API level 31 / gradle version: 7.2.1
 
 > iOS 15.4
 
