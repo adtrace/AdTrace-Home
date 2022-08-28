@@ -20,6 +20,8 @@
      - [Flutter SDK](https://github.com/adtrace/adtrace_sdk_flutter)
      - [React Native SDK](https://github.com/adtrace/adtrace_sdk_react_native)
      - [Unity SDk](https://github.com/adtrace/adtrace_sdk_unity)
+- Web
+  - [Web](https://github.com/adtrace/adtrace_sdk_web)
 
 ### **Technical support**
 if you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
@@ -31,6 +33,8 @@ if you have any technical question please review closed issues or submit a new *
      - [Flutter issues](https://github.com/adtrace/adtrace_sdk_flutter/issues)
      - [React Native issues](https://github.com/adtrace/adtrace_sdk_react_native/issues)
      - [Unity issues](https://github.com/adtrace/adtrace_sdk_unity/issues)
+- Web
+  - [Web issues](https://github.com/adtrace/adtrace_sdk_web/issues)
 
 ### ***Recommended issue template***
 ---
