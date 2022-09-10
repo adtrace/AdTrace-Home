@@ -19,7 +19,7 @@
 - Frameworks
      - [Flutter SDK](https://github.com/adtrace/adtrace_sdk_flutter)
      - [React Native SDK](https://github.com/adtrace/adtrace_sdk_react_native)
-     - [Unity SDk](https://github.com/adtrace/adtrace_sdk_unity)
+     - [Unity SDK](https://github.com/adtrace/adtrace_sdk_unity)
 - Web
   - [Web](https://github.com/adtrace/adtrace_sdk_web)
 
