@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
-<img src="./files/sdk-selection-diagram.png" height="alt="Adtrace logo">
+<img src="./files/sdk-selection.png" height="alt="Which Adtrace SDK to use in my project">
 </a></p>  
 
 
@@ -21,10 +21,15 @@
      - [React Native SDK](https://github.com/adtrace/adtrace_sdk_react_native)
      - [Unity SDK](https://github.com/adtrace/adtrace_sdk_unity)
 - Web
-  - [Web](https://github.com/adtrace/adtrace_sdk_web)
+  - [Web SDK](https://github.com/adtrace/adtrace_sdk_web)
 
-### **Technical support**
-if you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
+# **Technical support**
+If you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/debug-flow.png" alt="Adtrace technical support">
+</a></p>
+
 
 - Native
      - [android issues](https://github.com/adtrace/adtrace_sdk_android/issues)
@@ -35,6 +40,38 @@ if you have any technical question please review closed issues or submit a new *
      - [Unity issues](https://github.com/adtrace/adtrace_sdk_unity/issues)
 - Web
   - [Web issues](https://github.com/adtrace/adtrace_sdk_web/issues)
+  
+
+# Adtrace Event 
+You can use the Adtrace SDK to track event information (for example when user clicks on a button) by associating an event with an event token. To do this, you will need to create event tokens for each event you want to track in the Adtrace Panel.
+You can also use event tracking to track revenue-generating actions in your app (including engagements and in-app purchases). if you need to attach other information (e.g. user data associated with the event) to the event object as `key`,`value` pairs.
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/event-flow.png" alt="Adtrace event">
+</a></p>
+
+
+# How Tracker Works
+Adtrace trackers are your foundation for campaign tracking. Use tracker URLs to:
+-  Link users to your app in the appropriate app store.
+-  Record user engagement with ads.
+-  Segment users by attribution source.
+-  Redirect users based on device type.
+
+Your trackers can live wherever there is engagement with your campaign media. For example, in-app advertisements, emails, search engine results, social media posts, mobile websites, on connected TV, and more. The placement of the actual tracker URL depends on what advertising channel you use. In Adtrace, there are different types of tracker. The two most common are `click` trackers and `impression` trackers. These can be used in any type of mobile or web campaign and can be created and edited in The Adtrace Panel. all changes are published simultaneously!
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/how-tracker-works.png" alt="how tracker works">
+</a></p>
+
+
+# How Deferred deep linking works
+
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/deeplink-flow.png" alt="deeplink overview">
+</a></p>
+
 
 ### ***Recommended issue template***
 ---
