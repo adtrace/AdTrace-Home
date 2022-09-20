@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
-<img src="./files/sdk-selection-diagram.png" height="alt="Adtrace logo">
+<img src="./files/sdk-selection.png" height="alt="Which Adtrace SDK to use in my project">
 </a></p>  
 
 
@@ -21,10 +21,15 @@
      - [React Native SDK](https://github.com/adtrace/adtrace_sdk_react_native)
      - [Unity SDK](https://github.com/adtrace/adtrace_sdk_unity)
 - Web
-  - [Web](https://github.com/adtrace/adtrace_sdk_web)
+  - [Web SDK](https://github.com/adtrace/adtrace_sdk_web)
 
-### **Technical support**
-if you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
+# **Technical support**
+If you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/debug-flow.png" alt="Adtrace technical support">
+</a></p>
+
 
 - Native
      - [android issues](https://github.com/adtrace/adtrace_sdk_android/issues)
@@ -35,6 +40,28 @@ if you have any technical question please review closed issues or submit a new *
      - [Unity issues](https://github.com/adtrace/adtrace_sdk_unity/issues)
 - Web
   - [Web issues](https://github.com/adtrace/adtrace_sdk_web/issues)
+
+# Adtrace Event 
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/event-flow.png" alt="Adtrace event">
+</a></p>
+
+
+# How Tracker Works
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/how-tracker-works.png" alt="how tracker works">
+</a></p>
+
+
+# How deep linking works
+
+<p align="center">
+<a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
+<img src="./files/deeplink-flow.png" alt="deeplink overview">
+</a></p>
+
 
 ### ***Recommended issue template***
 ---
