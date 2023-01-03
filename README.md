@@ -3,11 +3,12 @@
   <a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/License-MIT-green.svg'></a>  
 </p>
 
+
 # Which SDK to use in your project?
 
 <p align="center">
 <a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
-<img src="./files/sdk-selection.png" height="alt="Which Adtrace SDK to use in my project">
+<img src="./files/sdk_en.jpg" height="alt="Which Adtrace SDK to use in my project">
 </a></p>  
 
 
@@ -27,7 +28,7 @@
 If you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
 <p align="center">
 <a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
-<img src="./files/debug-flow.png" alt="Adtrace technical support">
+<img src="./files/debug_en.jpg" alt="Adtrace technical support">
 </a></p>
 
 
@@ -47,7 +48,7 @@ You can use the Adtrace SDK to track event information (for example when user cl
 You can also use event tracking to track revenue-generating actions in your app (including engagements and in-app purchases). if you need to attach other information (e.g. user data associated with the event) to the event object as `key`,`value` pairs.
 <p align="center">
 <a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
-<img src="./files/event-flow.png" alt="Adtrace event">
+<img src="./files/event_en.jpg" alt="Adtrace event">
 </a></p>
 
 
@@ -61,7 +62,7 @@ Adtrace trackers are your foundation for campaign tracking. Use tracker URLs to:
 Your trackers can live wherever there is engagement with your campaign media. For example, in-app advertisements, emails, search engine results, social media posts, mobile websites, on connected TV, and more. The placement of the actual tracker URL depends on what advertising channel you use. In Adtrace, there are different types of tracker. The two most common are `click` trackers and `impression` trackers. These can be used in any type of mobile or web campaign and can be created and edited in The Adtrace Panel. all changes are published simultaneously!
 <p align="center">
 <a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
-<img src="./files/how-tracker-works.png" alt="how tracker works">
+<img src="./files/tracker_en.jpg" alt="how tracker works">
 </a></p>
 
 
@@ -69,7 +70,7 @@ Your trackers can live wherever there is engagement with your campaign media. Fo
 
 <p align="center">
 <a href="https://adtrace.io" target="_blank" rel="noopener noreferrer">
-<img src="./files/deeplink-flow.png" alt="deeplink overview">
+<img src="./files/deeplink_en.jpg" alt="deeplink overview">
 </a></p>
 
 
