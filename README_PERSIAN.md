@@ -1,3 +1,6 @@
+[English](./README_PERSIAN.md),فارسی
+
+
 ## از کدام SDK در پروژه ام استفاده کنم؟
 
 <p align="center">
