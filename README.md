@@ -3,6 +3,7 @@
   <a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/License-MIT-green.svg'></a>  
 </p>
 
+English,[فارسی](./README_PERSIAN.md)
 
 # Which SDK to use in your project?
 
