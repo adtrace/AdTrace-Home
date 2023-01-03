@@ -1,4 +1,4 @@
-[English](./README_PERSIAN.md),فارسی
+[English](./README.md),فارسی
 
 
 ## از کدام SDK در پروژه ام استفاده کنم؟
