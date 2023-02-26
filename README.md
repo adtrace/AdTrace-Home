@@ -25,6 +25,19 @@ English,[فارسی](./README_PERSIAN.md)
 - Web
   - [Web SDK](https://github.com/adtrace/adtrace_sdk_web)
 
+## [NEW] FAQs:
+- Native
+     - [android](./FAQs/android-native-faq.md)
+     - Web bridge
+     - iOS
+- Frameworks
+     - Flutter
+     - React Native
+     - Unity
+- Web
+  - Web
+
+
 # **Technical support**
 If you have any technical question please review closed issues or submit a new **issue** in the corresponding repository. our technical support is available ASAP (usually less than 24 hours).
 <p align="center">
