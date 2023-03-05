@@ -29,7 +29,7 @@ English,[فارسی](./README_PERSIAN.md)
 - Native
      - [android](./FAQs/android-native-faq.md)
      - Web bridge
-     - iOS
+     - [iOS](./FAQs/ios-native-faq.md)
 - Frameworks
      - Flutter
      - React Native
