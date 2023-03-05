@@ -8,6 +8,7 @@
 <img src="./files/sdk_fa.jpg" height="alt="Which Adtrace SDK to use in my project">
 </a></p>  
 
+
 ---
 ### لینک های مربوط به داکیومنت رسمی ادتریس
 ---
@@ -20,6 +21,19 @@
      - [Unity SDK](https://github.com/adtrace/adtrace_sdk_unity)
 - Web
   - [Web SDK](https://github.com/adtrace/adtrace_sdk_web)
+
+
+---
+### [جدید]سوالات پرتکرار
+---
+- Native
+     - [android](./FAQs/android-native-faq.md)
+     - Web bridge
+     - [iOS](./FAQs/ios-native-faq.md)
+- Frameworks
+     - Flutter
+     - React Native
+     - Unity
 
 ---
 ### پشتیبانی فنی
