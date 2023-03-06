@@ -14,31 +14,102 @@ This part is necessary for the basic functionality of the SDK. Each step **MUST*
 [official documentation](https://github.com/adtrace/adtrace_sdk_iOS#basic-integration)
 
 ### Where can I see real Examples of implementation?
+[Adtrace official github](https://github.com/adtrace/adtrace_sdk_iOS) includes several examples for different cases.
 
-### Can I use Adtrace for `swift` projects too?
+[ObjC Project example](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/examples/AdtraceExample-ObjC)
+[Swift Project Example](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/examples/AdtraceExample-Swift)
+[WebView Project Example](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/examples/AdtraceExample-WebView)
+[iMessage Project Example](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/examples/AdtraceExample-iMessage)
+[iWatch Project Example](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/examples/AdtraceExample-iWatch)
+[tvOS Project Example](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/examples/AdtraceExample-tvOS)
+
+### Can I use Adtrace in my `swift` projects too?
+Yes for short answer, for more information [see this](https://github.com/adtrace/adtrace_sdk_iOS#basic-integration)
 
 ### How to use `SPM` instead of `pods`?
+You can add Adtrace iOS SDK using [official github repository](https://github.com/adtrace/adtrace_sdk_iOS). simply go to `File > Add Packages...`. enter url for iOS SDK repository (e.g. `https://github.com/adtrace/adtrace_sdk_iOS`) for `Package URL`.
 
 ### Does Adtrace provides `xcframework`?
+Yes, there is a stack of frameworks after each release in [official github repository for iOS SDK](https://github.com/adtrace/adtrace_sdk_iOS/releases). there is also [build script](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/script) for building frameworks.
 
-### Where can I get Adtrace `xcframework` files?
 
 ### Where can I find `app token`?
+After creating an account in [Adtrace panel](https://pnael.adtrace.io) you can create an application. by creating an app, Adtrace will generate a hash-like `app token` which you can use it in your app as String which indicates your application for our backend. you can find it in `Panel > Settings > AppToken`.
 
 ### I don't see any `log` from Adtrace!
+Adtrace generally prints logs in different levels. for more information [see this](https://github.com/adtrace/adtrace_sdk_iOS#adtrace-logging). make sure to set up logging level you wish to. in order to see all the logs from Adtrace SDK set log level to `Verbose`. *note that if [Adtrace Environment](https://github.com/adtrace/adtrace_sdk_iOS#basic-setup) is set to `ADTEnvironmentSandbox` all the logs are dismissed. to activate logs instead use `ADTEnvironmentSandbox`.*
 
 ### I don't see any changes in Adtrace panel statistics!
+When SDK is properly integrated to your app it'll sends data to our backend and those data will be shown. if you don't see any changes in statistics make sure to check following cases:
 
-### Why there is no change in installs even when I remove and install the app again?
+- [Minimum requirement is not provided for SDK to work]()
+- [Adtrace Panel is not configured correctly]()
+- [The Device is detected before]()
+- [Make sure everything is working fine (as expected)]()
+
+### What is the minimum requirement for Adtrace SDK?
+Adtrace provides a plentiful stack of features and you may want to use all or a part of them. however in order for Adtrace SDK to provides analytics and statistics for your application you MUST integrate [basics](https://github.com/adtrace/adtrace_sdk_iOS#basic-integration).
+
+First make sure following parts are done:
+- [Add SDK to your project](https://github.com/adtrace/adtrace_sdk_iOS#add-the-sdk-to-your-project)
+- [Integrate the SDK into your app](https://github.com/adtrace/adtrace_sdk_iOS#integrate-the-sdk-into-your-app)
+- [Basic setup](https://github.com/adtrace/adtrace_sdk_iOS#basic-setup)
+
+you can always take look at [example apps](https://github.com/adtrace/adtrace_sdk_iOS/tree/master/examples) without hesitation.
+
+
+### Sandbox mode vs Production mode
+When you are started to integrate Adtrace into your app or you're about to test if it is working as expected you have to set [Adtrace Environment](https://github.com/adtrace/adtrace_sdk_iOS#basic-setup) to `ADTEnvironmentSandbox`. this way traffic from testing is separated from `ADTEnvironmentProduction` which is used for release and SDK will prints logs too in order you to see it's functionality. make sure to change it back to `ADTEnvironmentProduction` before release.
+
+Note that you can control amount of logs using [log level](https://github.com/adtrace/adtrace_sdk_iOS#adtrace-logging) however it is recommended to set it to `Verbose` to see all.
 
 ### How to make sure everything is working fine (as expected)?
+Prior to all other functionalities Adtrace needs application to be opened and an `Install` occurs for the application on the Device.
 
+- [How do I know if `Install` is tracked?]()
+- [How do I know if `Session` is tracked?]()
+- [How do I know if `Event` is tracked?]()
+
+### How do I know `Install` is tracked?
+There are two ways to check if `Install` is tracked.
+
+- [Check if `Install` is tracked via `Log`]()
+- [Check if `Install` is tracked via `Testing Console`]()
+
+
+### Check if `Install` is tracked via `Log`
+Firstly, make sure you're in Sandbox mode.
+
+When SDK printed logs, simple search for `response` which our backend is sends back to SDK requests. if the `response` object contains `adid` field with hash-like value, `Install` is tracked.  
+
+
+### Check if `Install` is tracked via `Testing Console`
+First go to `Settings > Testing Console` in [Adtrace Panel](https://panel.adtrace.io).
+
+You need to provide an ID referring to the Device to check if `Install` is tracked. if your application is authorized to obtain `IDFA` then you can use it, otherwise you have to search for `primary_dedupe_token` use it's value as `IDFA`.
+
+### What is a "Fresh Device"?
+When an application is `Install`ed on a device, it'll be known and if the application is uninstalled and install again, it won't be considered as a new `Install`. this is a problem when testing installs because you need to use a device which is not recorded before for the app, or a "Fresh Device". 
+
+### How to "Forget" my device?
+Go to [Adtrace panel](https://panel.adtrace.io). follow the path `Settings > Testing Console`. enter your Device's ID to clear it's information from Adtrace backend.
+
+### Is Panel configured for what I want to see?
+When viewing data and statistics in Adtrace panel, you might consider following cases to make sure every thing is shown as you wish to:
+- Locale time
+- Selected Interval
+- Fraud Detection Settings
+- Filtering
+
+### Why there is no change in installs even when I remove and install the app again?
+As an app is installed on a device, that device will be known to Adtrace for the app and if you reinstall an app right after installing, it will not considered as a new install. for more information see [Fresh Device]() and [Forget Device]().
 ---
 ## Adtrace Tracking Transparency
 
 [official documentation](https://github.com/adtrace/adtrace_sdk_iOS#apptrackingtransparency-framework)
 
 ### Adtrace makes my app ask for tracking authorization
+
 
 ### How to disable tracking authorization?
 
