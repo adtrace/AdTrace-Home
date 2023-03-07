@@ -1,6 +1,46 @@
 # FAQs for AdTrace iOS native SDK
 
 
+- [FAQs for AdTrace iOS native SDK](#faqs-for-adtrace-ios-native-sdk)
+  - [Basic implementation](#basic-implementation)
+  - [Add Adtrace to your project](#add-adtrace-to-your-project)
+    - [Where can I see real Examples of implementation?](#where-can-i-see-real-examples-of-implementation)
+    - [Can I use Adtrace in my `swift` projects too?](#can-i-use-adtrace-in-my-swift-projects-too)
+    - [How to use `SPM` instead of `pods`?](#how-to-use-spm-instead-of-pods)
+    - [Does Adtrace provides `xcframework`?](#does-adtrace-provides-xcframework)
+    - [Where can I find `app token`?](#where-can-i-find-app-token)
+    - [I don't see any `log` from Adtrace!](#i-dont-see-any-log-from-adtrace)
+    - [I don't see any changes in Adtrace panel statistics!](#i-dont-see-any-changes-in-adtrace-panel-statistics)
+    - [What is the minimum requirement for Adtrace SDK?](#what-is-the-minimum-requirement-for-adtrace-sdk)
+    - [Sandbox mode vs Production mode](#sandbox-mode-vs-production-mode)
+    - [How to make sure everything is working fine (as expected)?](#how-to-make-sure-everything-is-working-fine-as-expected)
+    - [How do I know `Install` is tracked?](#how-do-i-know-install-is-tracked)
+    - [Check if `Install` is tracked via `Log`](#check-if-install-is-tracked-via-log)
+    - [Check if `Install` is tracked via `Testing Console`](#check-if-install-is-tracked-via-testing-console)
+    - [What is a "Fresh Device"?](#what-is-a-fresh-device)
+    - [How to "Forget" my device?](#how-to-forget-my-device)
+    - [Is Panel configured for what I want to see?](#is-panel-configured-for-what-i-want-to-see)
+    - [Why there is no change in installs even when I remove and install the app again?](#why-there-is-no-change-in-installs-even-when-i-remove-and-install-the-app-again)
+  - [As an app is installed on a device, that device will be known to Adtrace for the app and if you reinstall an app right after installing, it will not considered as a new install. for more information see Fresh Device and Forget Device.](#as-an-app-is-installed-on-a-device-that-device-will-be-known-to-adtrace-for-the-app-and-if-you-reinstall-an-app-right-after-installing-it-will-not-considered-as-a-new-install-for-more-information-see-fresh-device-and-forget-device)
+  - [Adtrace Tracking Transparency](#adtrace-tracking-transparency)
+    - [Adtrace makes my app ask for tracking authorization](#adtrace-makes-my-app-ask-for-tracking-authorization)
+    - [How do I know if user allowed app-tracking authorization?](#how-do-i-know-if-user-allowed-app-tracking-authorization)
+  - [Event tracking](#event-tracking)
+      - [What is `eventToken`?](#what-is-eventtoken)
+      - [What is a `unique` event?](#what-is-a-unique-event)
+      - [How many events per user (or per certain amount of time) you can track?](#how-many-events-per-user-or-per-certain-amount-of-time-you-can-track)
+      - [How many different events can you define?](#how-many-different-events-can-you-define)
+      - [How to make sure event is successfully sent?](#how-to-make-sure-event-is-successfully-sent)
+    - [Revenue](#revenue)
+      - [Does AdTrace converts revenues considering currency name?](#does-adtrace-converts-revenues-considering-currency-name)
+    - [Revenue deduplication](#revenue-deduplication)
+      - [Why Revenue deduplication is important and how to use it?](#why-revenue-deduplication-is-important-and-how-to-use-it)
+    - [Value parameters](#value-parameters)
+      - [How can I add any information that I want to event?](#how-can-i-add-any-information-that-i-want-to-event)
+      - [How many parameters can be added to event?](#how-many-parameters-can-be-added-to-event)
+  - [Session](#session)
+    - [How should I send a session?](#how-should-i-send-a-session)
+    - [How to make sure session is successfully sent?](#how-to-make-sure-session-is-successfully-sent)
 
 
 ---
@@ -109,12 +149,10 @@ As an app is installed on a device, that device will be known to Adtrace for the
 [official documentation](https://github.com/adtrace/adtrace_sdk_iOS#apptrackingtransparency-framework)
 
 ### Adtrace makes my app ask for tracking authorization
-
-
-### How to disable tracking authorization?
+Generally Adtrace SDK does not attempt to request for tracking authorization. even though `IDFA` is necessary for tracking but Adtrace managed to work without it meaning if you don't want to authorize for tracking Adtrace still works as before using it's own generated IDs. so you can disable all the requests related to this.
 
 ### How do I know if user allowed app-tracking authorization?
-
+for more information [see this](https://github.com/adtrace/adtrace_sdk_iOS#app-tracking-authorisation-wrapper).
 
 ---
 ## Event tracking
@@ -177,7 +215,7 @@ Mostly event revenue is considered as a source to compare real revenue from in a
 
 The main cause of this issue is rooted in the process of events. when user presses the purchase button, due to connection delays for instance, application does not response immediately and user temps to press the button several time. this leads to triggering few events for one purchase. as AdTrace promises to send any number of events within any interval of time, it will do. that would be a problem when event has revenue and for a single purchase AdTrace receives several revenues.
 
-To prevent this from happening, AdTrace suggests revenue deduplication. when you want to trigger an event with revenue, consider a unique `OrderId` for that purchase for each, so that if this event triggered more than once, AdTrace knows it is the same and prevent it from adding to your overall revenue. for more information about [how to prevent revenue duplication](https://github.com/adtrace/adtrace_sdk_android#et-revenue-deduplication) see this part of docs.
+To prevent this from happening, AdTrace suggests revenue deduplication. when you want to trigger an event with revenue, consider a unique `OrderId` for that purchase for each, so that if this event triggered more than once, AdTrace knows it is the same and prevent it from adding to your overall revenue. for more information about [how to prevent revenue duplication](https://github.com/adtrace/adtrace_sdk_iOS#revenue-deduplication) see this part of docs.
 
 ---
 
@@ -186,7 +224,7 @@ To prevent this from happening, AdTrace suggests revenue deduplication. when you
 #### How can I add any information that I want to event?
 As an event is a golden source of users analytics, some times it is necessary to send related information that are even more important. on the other side you can not define an event for each single case in the application.
 
-You can add any value to an event using value parameter. this parameters are `key`,`value` and `String` based. after adding any amount of value parameters, the event is send as a regular simple event. for more information [see this](https://github.com/adtrace/adtrace_sdk_android#event-parameters-1).
+You can add any value to an event using value parameter. this parameters are `key`,`value` and `String` based. after adding any amount of value parameters, the event is send as a regular simple event. for more information [see this](https://github.com/adtrace/adtrace_sdk_iOS#value-parameters).
 
 #### How many parameters can be added to event?
 There is no limit to this. you can have any number of parameters added to event. how ever the best practice is to consider a structure for your events. more like a default keys with their values changing for each event. see this example:
@@ -238,7 +276,8 @@ This way collected data is clean, ready and unnecessary or duplicated informatio
 ## Session
 
 ### How should I send a session?
+By finishing basic implementation Adtrace will automatically send sessions and there is no need to add anything for doing this.
 
 ### How to make sure session is successfully sent?
-
+Session has two callbacks for failed and successful sessions. for more information [see this](https://github.com/adtrace/adtrace_sdk_iOS#event-and-session-callbacks).
 
