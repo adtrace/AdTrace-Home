@@ -27,28 +27,28 @@
 ### [جدید]سوالات پرتکرار
 ---
 - Native
-     - [android](./FAQs/android-native-faq.md) <img src='https://img.shields.io/badge/state-stable-green?style=plastic'> 
-     - [Web bridge](./FAQs/webbridge-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
-     - [iOS](./FAQs/ios-native-faq.md) <img src='https://img.shields.io/badge/state-stable-green?style=plastic'> 
+     - [android](./files/FAQs/android-native-faq-en.md) <img src='https://img.shields.io/badge/state-stable-green?style=plastic'> 
+     - [Web bridge](./files/FAQs/webbridge-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [iOS](./files/FAQs/ios-native-faq-en.md) <img src='https://img.shields.io/badge/state-stable-green?style=plastic'> 
 - Frameworks
-     - [Flutter](./FAQs/flutter-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
-     - [React Native](./FAQs/react-native-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
-     - [Unity](./FAQs/unity-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [Flutter](./files/FAQs/flutter-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [React Native](./files/FAQs/react-native-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [Unity](./files/FAQs/unity-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 - Web
-  - [Web](./FAQs/web-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+  - [Web](./files/FAQs/web-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 
 ---
 ### [جدید]راهنمای مهاجرت 
 ---
 - Native
-     - [android](./MigrationGuides/android.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
-     - [iOS](./MigrationGuides/ios.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [android](./files/MigrationGuides/android.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [iOS](./files/MigrationGuides/ios.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 - Frameworks
-     - [Flutter](./MigrationGuides/flutter.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
-     - [React Native](./MigrationGuides/reactnative.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
-     - [Unity](./MigrationGuides/unity.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [Flutter](./files/MigrationGuides/flutter.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [React Native](./files/MigrationGuides/reactnative.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [Unity](./files/MigrationGuides/unity.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 - Web
-  - [Web](./MigrationGuides/web.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+  - [Web](./files/MigrationGuides/web.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 
 ---
 ### پشتیبانی فنی
