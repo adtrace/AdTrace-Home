@@ -35,7 +35,7 @@ English,[فارسی](./README_PERSIAN.md)
      - [React Native](./files/FAQs/reactnative/react-native-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
      - [Unity](./files/FAQs/unity/unity-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 - Web
-  - [Web](./files/FAQs/web/web-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+  - [Web](./files/FAQs/web/web-faq-en.md) <img src='https://img.shields.io/badge/state-working on it-blue?style=plastic'> 
 
 ## [NEW] Migration Guides:
 - Native

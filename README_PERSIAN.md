@@ -35,7 +35,7 @@
      - [React Native](./files/FAQs/react-native-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
      - [Unity](./files/FAQs/unity-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 - Web
-  - [Web](./files/FAQs/web-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+  - [Web](./files/FAQs/web-faq-en.md) <img src='https://img.shields.io/badge/state-working on it-blue??style=plastic'> 
 
 ---
 ### [جدید]راهنمای مهاجرت 
