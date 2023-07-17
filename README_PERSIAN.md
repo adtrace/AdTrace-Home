@@ -31,7 +31,7 @@
      - [Web bridge](./files/FAQs/webbridge-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
      - [iOS](./files/FAQs/ios-native-faq-en.md) <img src='https://img.shields.io/badge/state-stable-green?style=plastic'> 
 - Frameworks
-     - [Flutter](./files/FAQs/flutter-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [Flutter](./files/FAQs/flutter-faq-en.md) <img src='https://img.shields.io/badge/state-working on it-blue?style=plastic'> 
      - [React Native](./files/FAQs/react-native-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
      - [Unity](./files/FAQs/unity-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
 - Web
