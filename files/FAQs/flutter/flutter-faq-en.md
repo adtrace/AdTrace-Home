@@ -11,6 +11,7 @@
     - [I have problem receiving `deferred deeplink`.](#i-have-problem-receiving-deferred-deeplink)
     - [install tracking is NOT working in `production` mode, but works in `sandbox`.](#install-tracking-is-not-working-in-production-mode-but-works-in-sandbox)
     - [`Could not build module 'adtrace_sdk'`](#could-not-build-module-adtrace_sdk)
+    - [My app crash after I added `AdTrace-SDK`. what should I do?](#my-app-crash-after-i-added-adtrace-sdk-what-should-i-do)
 
 
 ---
@@ -66,3 +67,7 @@ if you're is using any kind of **obfuscation**  (ProGuard, R8 and etc) sometime 
 ### `Could not build module 'adtrace_sdk'`
 go to `Build Settings` under `Target` and set `Allow Non-modular Includes in Framework Modules` to `YES`.
 
+### My app crash after I added `AdTrace-SDK`. what should I do?
+first make sure you are using the latest version of [SDK on `pub.dev`](https://pub.dev/packages/adtrace_sdk_flutter). some previous version are not compatible with latest versions of flutter sdk.
+
+as AdTrace SDKs updated every once in a while, each version is tested on several OS versions and device models to make sure everything works fine. however the source code of SDKs are published with every version to let every one see. if you are getting an error of which AdTrace SDK caused the crash please create an issue on github or contact us in case of hurry. 
