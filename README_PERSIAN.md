@@ -28,12 +28,12 @@
 ---
 - Native
      - [android](./files/FAQs/android-native-faq-en.md) <img src='https://img.shields.io/badge/state-stable-green?style=plastic'> 
-     - [Web bridge](./files/FAQs/webbridge-faq.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [Web bridge](./files/FAQs/webbridge-faq.md) <img src='https://img.shields.io/badge/state-working on it-orange?style=plastic'> 
      - [iOS](./files/FAQs/ios-native-faq-en.md) <img src='https://img.shields.io/badge/state-stable-green?style=plastic'> 
 - Frameworks
      - [Flutter](./files/FAQs/flutter-faq-en.md) <img src='https://img.shields.io/badge/state-working on it-blue?style=plastic'> 
-     - [React Native](./files/FAQs/react-native-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
-     - [Unity](./files/FAQs/unity-faq-en.md) <img src='https://img.shields.io/badge/state-on the way-orange?style=plastic'> 
+     - [React Native](./files/FAQs/react-native-faq-en.md) <img src='https://img.shields.io/badge/state-working on it-orange?style=plastic'> 
+     - [Unity](./files/FAQs/unity-faq-en.md) <img src='https://img.shields.io/badge/state-working on it-orange?style=plastic'> 
 - Web
   - [Web](./files/FAQs/web-faq-en.md) <img src='https://img.shields.io/badge/state-working on it-blue??style=plastic'> 
 
