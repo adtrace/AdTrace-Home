@@ -1,6 +1,6 @@
 # FAQs for AdTrace Flutter SDK
 
-- [FAQs for AdTrace Flutter SDK](#faqs-for-adtrace-flutter-sdk)
+- [FAQs- [FAQs for AdTrace Flutter SDK](#faqs-for-adtrace-flutter-sdk)
   - [General Questions](#general-questions)
     - [which platforms are supported in flutter sdk?](#which-platforms-are-supported-in-flutter-sdk)
     - [are there any difference between android or iOS SDKs and flutter SDK?](#are-there-any-difference-between-android-or-ios-sdks-and-flutter-sdk)
@@ -12,7 +12,8 @@
     - [install tracking is NOT working in `production` mode, but works in `sandbox`.](#install-tracking-is-not-working-in-production-mode-but-works-in-sandbox)
     - [`Could not build module 'adtrace_sdk'`](#could-not-build-module-adtrace_sdk)
     - [My app crash after I added `AdTrace-SDK`. what should I do?](#my-app-crash-after-i-added-adtrace-sdk-what-should-i-do)
-
+    - [How many `event`s can I send per user per time? how many parameters can I add to an `event`?](#how-many-events-can-i-send-per-user-per-time-how-many-parameters-can-i-add-to-an-event)
+  
 
 ---
 ## General Questions
@@ -22,7 +23,6 @@ iOS,android!
 
 ### are there any difference between android or iOS SDKs and flutter SDK?
 no there is not! flutter SDK is based on native android and iOS SDKs of Adtrace.
-
 
 
 ---
@@ -71,3 +71,9 @@ go to `Build Settings` under `Target` and set `Allow Non-modular Includes in Fra
 first make sure you are using the latest version of [SDK on `pub.dev`](https://pub.dev/packages/adtrace_sdk_flutter). some previous version are not compatible with latest versions of flutter sdk.
 
 as AdTrace SDKs updated every once in a while, each version is tested on several OS versions and device models to make sure everything works fine. however the source code of SDKs are published with every version to let every one see. if you are getting an error of which AdTrace SDK caused the crash please create an issue on github or contact us in case of hurry. 
+
+
+### How many `event`s can I send per user per time? how many parameters can I add to an `event`?
+see this: [Event Tracking android](../android/android-native-faq-en.md/#how-many-events-per-user-or-per-certain-amount-of-time-you-can-track)
+
+
