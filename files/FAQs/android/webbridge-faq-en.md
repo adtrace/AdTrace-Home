@@ -1,5 +1,20 @@
 # FAQs for AdTrace Android Webbridge SDK
 
+- [FAQs for AdTrace Android Webbridge SDK](#faqs-for-adtrace-android-webbridge-sdk)
+  - [General Questions](#general-questions)
+    - [My application is just one activity with a single `web-view` inside of it. how AdTrace is going to work on a web page inside of an app?](#my-application-is-just-one-activity-with-a-single-web-view-inside-of-it-how-adtrace-is-going-to-work-on-a-web-page-inside-of-an-app)
+    - [Can `Web-Bridge` have the exact same functionality as native?](#can-web-bridge-have-the-exact-same-functionality-as-native)
+    - [Can I use AdTrace for `PWA`?](#can-i-use-adtrace-for-pwa)
+    - [Can I use AdTrace for `TWA`?](#can-i-use-adtrace-for-twa)
+  - [Implementation](#implementation)
+    - [Do I need to add any "SDK" or scripts to web side?](#do-i-need-to-add-any-sdk-or-scripts-to-web-side)
+    - [I am using the same project and source for android `Web-View` and `PWA`. is AdTrace able to track my data using just `Web-Bridge` SDK?](#i-am-using-the-same-project-and-source-for-android-web-view-and-pwa-is-adtrace-able-to-track-my-data-using-just-web-bridge-sdk)
+    - [Which files I need to import for web side?](#which-files-i-need-to-import-for-web-side)
+    - [I need real world sample projects.](#i-need-real-world-sample-projects)
+    - [Which platforms AdTrace supports for using `Web-Bridge`?](#which-platforms-adtrace-supports-for-using-web-bridge)
+    - [How many `event`s my app can send in a day? how many parameters or meta data each `event` can have?](#how-many-events-my-app-can-send-in-a-day-how-many-parameters-or-meta-data-each-event-can-have)
+    - [I am not sure if AdTrace is tracking all of my `event`s. what can I do?](#i-am-not-sure-if-adtrace-is-tracking-all-of-my-events-what-can-i-do)
+
 ---
 ## General Questions
 ### My application is just one activity with a single `web-view` inside of it. how AdTrace is going to work on a web page inside of an app?
